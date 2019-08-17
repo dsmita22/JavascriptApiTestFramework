@@ -23,4 +23,13 @@ describe('NAB Api', () => {
         console.log(res.body);
     })
 
+    it('Get Location By Address' , async () =>{
+        const res = await api.get('/locations?v=1&locationType=atm&searchCriteria=addr&address=7030+TAS+Australia&startIndex=1&endIndex=10&radius=10&radiusB=1&radiusC=1')
+            .set('x-nab-key' , process.env.API_KEY)
+            .expect(200);
+        expect(res.body).to.be.not.null;
+        expect(res.body.locationSearchResponse.locations[0].apiStructType).to.be.equal('nab');
+        
+    })
+
 })
