@@ -1,0 +1,23 @@
+{
+  "name": "apiframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --transformIgnorePatterns"
+  },
+  "author": "Smita Dutta",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "should": "13.2.3",
+    "mocha": "6.2.0",
+    "jest": "24.8.0",
+    "jest-junit": "7.0.0",
+    "jest-environment-node": "24.8.0",
+    "supertest": "4.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "8.0.0"
+  }
+}
