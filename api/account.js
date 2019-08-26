@@ -20,4 +20,24 @@ const accountTest = {
     }
 }
 
-module.exports = { accountPay, accountTest };
+const pet ={
+    "id": 0,
+    "category": {
+      "id": 0,
+      "name": ""
+    },
+    "name": "doggie",
+    "photoUrls": [
+      ""
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": ""
+      }
+    ],
+    "status": "available"
+  }
+
+
+module.exports = { accountPay, accountTest ,pet};
