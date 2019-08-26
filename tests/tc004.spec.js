@@ -5,7 +5,7 @@ const api = supertest('https://api.openbrewerydb.org');
 const api1 = supertest('https://apisandbox.openbankproject.com')
 
 
-describe('openbrewerydb', () => {
+describe.skip('openbrewerydb', () => {
 
     it('openbrewerydb',async () => {
         const res = await api.get('/breweries')

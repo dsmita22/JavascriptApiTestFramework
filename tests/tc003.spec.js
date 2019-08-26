@@ -6,7 +6,7 @@ const api = supertest('https://sandbox.api.nab/v2');
 const _ = require('lodash');
 const payLoad = require('../api/account');
 
-describe('Test Post Account', () => {
+describe.skip('Test Post Account', () => {
     let token;
 
     it('Test account', async () => {
