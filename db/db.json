@@ -1,24 +1,28 @@
 {
-  "posts": [
+  "employees": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com"
     },
     {
       "id": 2,
-      "title": "json-server2",
-      "author": "typicode2"
-    }
-  ],
-  "comments": [
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@codingthesmartway.com"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@codingthesmartway.com"
+    },
+    {
+      "id": 4,
+      "first_name": "Smita",
+      "last_name": "Dutta",
+      "email": "dsmita@code.com"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
