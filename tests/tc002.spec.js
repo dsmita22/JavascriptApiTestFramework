@@ -16,7 +16,7 @@ describe('NAB Api', () => {
         expect(res.body.response.accountSummaries.map(e => e.accountLevelFlags)[0].map(e1 => e1.identifier)).to.be.not.eql([]);
     })
 
-    it('Get Account Balance', async () => {
+    it.skip('Get Account Balance', async () => {
         const res = await api.post('/accounts/balance?v=1')
             .set('Authorization', process.env.API_KEY)
             .send(payLoad)
