@@ -1,9 +1,14 @@
-FROM node:12.8.1-slim
+FROM node:12.8-slim
 
-COPY . .
-COPY package.json /
-COPY package-lock.json /
+WORKDIR /app
 
-RUN npm i
+COPY package.json ./
 
-CMD ["npm","test"]
+RUN npm --allow-root install
+
+COPY . ./
+
+RUN npm test
+
+
+
