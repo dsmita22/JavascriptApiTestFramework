@@ -6,7 +6,7 @@ const api = supertest('https://sandbox.api.nab/v2');
 const _ = require('lodash');
 const payLoad = require('../api/account');
 
-describe.skip('Test Post Account', () => {
+describe('Test Post Account', () => {
     let token;
 
     it('Test account', async () => {
@@ -23,10 +23,9 @@ describe.skip('Test Post Account', () => {
             .send(payLoad.accountPay)
             .expect(200);
         expect(resp.body.response.accounts.map(e => e.category).shift()).to.be.equal("DOMESTIC");
-        expect(resp.body.response.accounts.map(e => e.balance.amount.availableBalance).map(e1 =>e1.currency).shift()).to.be.equal("THB");
-        expect(resp.body.response.accounts.map(e => e.balance.amount.availableBalance).map(e1 =>e1.amount).shift()).to.be.equal("10.00");
-        
-        
+        expect(resp.body.response.accounts.map(e => e.balance.amount.availableBalance).map(e1 => e1.currency).shift()).to.be.equal("THB");
+        expect(resp.body.response.accounts.map(e => e.balance.amount.availableBalance).map(e1 => e1.amount).shift()).to.be.equal("10.00");
+
     })
 
 
