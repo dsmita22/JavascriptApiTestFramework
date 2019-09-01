@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --transformIgnorePatterns",
+    "test": "jest --transformIgnorePatterns --runInBand tc007_APIatm.spec.js",
     "mock": "json-server --watch db/db.json",
     "start": "concurrently \"npm run mock\" \"npm test\""
   },
