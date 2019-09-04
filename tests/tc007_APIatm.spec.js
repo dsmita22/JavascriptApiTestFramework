@@ -10,8 +10,7 @@ describe('API for Atm',()=>{
                   .expect(200);
         expect(res.body.Data.Atm.map(e => e.AtmId));
         expect(res.body.Data.Atm.map(e => e.Organisation.ParentOrganisation)[1].OrganisationName.LegalName).to.be.equals('Bank of Ireland (UK) plc');
-        
-
+        expect(res.body.Data.Atm.map(e1 => e1.SupportedLanguages).shift().shift()).to.be.equals('English');
 
     })
 
