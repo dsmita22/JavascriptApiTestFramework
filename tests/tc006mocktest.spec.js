@@ -9,8 +9,6 @@ describe('Test mock api', () => {
         const res = await api.get('/employees')
             .expect(200);
         console.log(res.body);
-        
-        
     })
 
 })

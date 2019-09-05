@@ -14,7 +14,6 @@ describe('openbrewerydb', () => {
         expect(res.body).to.be.not.null;
         console.log(res.body.map(e => e.id));
         expect(res.body.find(e1 => e1.city === 'Little Rock').city).to.be.equal('Little Rock');
-
     })
 
     it('openBank project', async () => {
@@ -22,8 +21,6 @@ describe('openbrewerydb', () => {
             .expect(200);
         expect(res.body).to.be.not, null;
         console.log(res.body.transactions.map(e => e.metadata).filter(e1 => e1.narrative));
-
-
     })
 
 })
